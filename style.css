@@ -74,6 +74,10 @@ body {
     font-weight: bold;
 }
 
+.sidebar ul li:nth-child(6){
+    margin-bottom: 50px;
+}
+
 .main-content{
     display: grid;
     /* grid-template-rows: auto auto 1fr; */
@@ -106,6 +110,25 @@ body {
     font-size: 14px;
 }
 
+.project-cards .card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position the pseudo-element */
+}
+
+.project-cards .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px; /* Width of the colored strip */
+    height: 100%;
+    background-color: #f0a500; /* Your desired color */
+    border-top-left-radius: 5px; /* Rounded corner for the top */
+    border-bottom-left-radius: 5px; 
+}
 
 .card {
     background-color: #f8f9fa;
@@ -113,6 +136,8 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .Announcements{
     grid-column:  2/ 3;
