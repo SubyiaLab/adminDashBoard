@@ -9,24 +9,61 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 250px, 1fr;
-    grid-template-rows: auto 1fr;
+     
 }
 
 .dashboard{
-    display: grid;
-    grid-template-columns: 250px, 1fr;
-    width: 100vw;
-    height: 100vh;
+    margin-left:250px;
+    width: calc(100% - 250px);
 }
 
+.navbar{
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-container input {
+    padding:10px ;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.action-btn{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 .sidebar{
     background-color: #007bff;
     color: white;
     padding: 20px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 250px;
 }
 
 .sidebar ul li {
     margin: 20px 0;
+}
+
+.sidebar ul {
+    list-style: none;
 }
 
 .sidebar ul li a {
@@ -37,7 +74,7 @@ body {
 
 .main-content{
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto 1fr;
     grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
     padding: 20px;
@@ -59,6 +96,12 @@ body {
     grid-template-columns: repeat(2,1fr);
     gap:20px;
 }
+
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+
 
 .card {
     background-color: #f8f9fa;
@@ -91,4 +134,19 @@ body {
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    height: 50px;
+    width: auto;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    margin-right: 10px;
 }
