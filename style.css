@@ -142,28 +142,82 @@ body {
 .Announcements{
     grid-column:  2/ 3;
     /* grid-row: 2 / 3; */
-}
-
-.Announcements-card{
     background-color: #f8f9fa;
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* .Announcements-card{
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.Announcements-card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* .Announcements-card:first-child{
+    margin-top: 20px;
+} */
 
 .trending {
     grid-column: 2/ 3;
     /* grid-row: 3/ 4; */
 }
 
-.trending-item{
-    background-color: #f8f9fa;
+/* Container for the Trending section */
+.trending {
+    background-color: white;
     padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Title styling */
+.trending h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Individual trending item container */
+.trending-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; /* Space between items */
+}
+
+/* Remove margin for the last item */
+.trending-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Avatar styling */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+/* Username styling */
+.username {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Description styling */
+.description {
+    color: gray;
+    margin: 0;
+}
+
 
 img{
     height: 50px;
