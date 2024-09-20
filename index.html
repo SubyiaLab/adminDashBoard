@@ -10,8 +10,9 @@
 </head>
 <body>
     <div class="dashboard">
-        <!-- sidebar -->
+         <!-- sidebar -->
          <nav class="sidebar">
+            <h3><i class="fas fa-dashboard"></i> Dashboard</h3>
             <ul>
                 <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
@@ -29,27 +30,38 @@
           <div class="main-content">
 
             <!-- Nav bar-->
-             <header class="navbar">
-                <div class="search container">
-                    <li class="fa fa-search"></li><input type=" text" placeholder="Search ...">
-                </div>
-                <div class="profile-section">
-                    <button class="action-btn">News</button>
-                    <button class="action-btn">Upload</button>
-                    <button class="action-btn">Share</button>
+            <header class="navbar">
+                <div class="navbar-up">
+                    <input type="text" class="search-bar" placeholder="Search ...">
                     <div class="user-profile">
-                        <img src="./img/icon.png" alt="Profile Image">
-                        <span>Morgan Oakly</span>
+                        <i class="fas fa-bell notification-icon"></i>
+                        <img src="./img/icon.png" alt="Profile Image" class="profile-avatar">
+                        <span class="profile-name">Morgan Oakly</span>
                     </div>
                 </div>
-             </header>
+                
+                <div class="navbar-down">
+                    
+                    <div class="user-info">
+                        <img src="./img/icon.png" alt="Profile Image" class="avatar">
+                        <div class="user-details">
+                            <p>Hi there,</p>
+                            <p class="username">@Morgan Oakly</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cluster">
+                        <button class="action-btn">New</button>
+                        <button class="action-btn">Upload</button>
+                        <button class="action-btn">Share</button>
+                    </div>
+                   
+                </div>
 
-            <!-- User Info-->
-             <header class="user-info">
-                <h2>Hi there, this si your dashboard (@Morgan Oakly)</h2>
-             </header>
+            
+            </header>
 
-             <!-- Projects section-->
+              <!-- Projects section-->
               <section class="projects">
                 <h3>Your Projects</h3>
                 <div class="project-cards">
